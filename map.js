@@ -11,11 +11,10 @@
 	var reader = new FileReader();
         reader.onload = function(e) {
             shpfile = new L.Shapefile(e.target.result,{isArrayBufer:true});
-			//console.log(shpfile);
-			shpfile.addTo(m);
 			shpfile.on("data:loaded", function (e){
 				m.fitBounds(shpfile.getBounds());
 			});
+            shpfile.addTo(m);            
         };
 
         reader.onerror = function(e) {
