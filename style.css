@@ -11,4 +11,12 @@ body {
 #map {
 	height: 400px;
 	width:600px;
+	margin: 20px
+}
+#file {
+    margin: 5px 20px;
+    padding: 5px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 560px;
 }
